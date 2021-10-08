@@ -1,1 +1,6 @@
-./build/compile_commands.json
+[
+{
+  "directory": "/Users/niksun/development/c/utun",
+  "arguments": ["/usr/bin/xcrun -sdk macosx clang", "-c", "-Qunused-arguments", "-arch", "x86_64", "-o", "build/.objs/utun/macosx/x86_64/release/src/main.c.o", "src/main.c"],
+  "file": "src/main.c"
+}]

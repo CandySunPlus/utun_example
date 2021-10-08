@@ -16,8 +16,7 @@ int tun(void) {
     struct ctl_info ctlInfo = {0};
     int fd;
 
-    if (strlcpy(ctlInfo.ctl_name, UTUN_CONTROL_NAME, sizeof(ctlInfo.ctl_name)) >=
-        sizeof(ctlInfo.ctl_name)) {
+    if (strlcpy(ctlInfo.ctl_name, UTUN_CONTROL_NAME, sizeof(ctlInfo.ctl_name)) >= sizeof(ctlInfo.ctl_name)) {
         perror("UTUN_CONTROL_NAME too long");
         return -1;
     }
